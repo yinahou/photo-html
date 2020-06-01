@@ -1,0 +1,45 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+</HEAD>
+<body bgcolor="#FFFFFF" topmargin=0 leftmargin=0 marginwidth=0 marginheight=0 background="../image/2.gif">
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100% HEIGHT=100%>
+<TR><TD>
+	<UL>
+	<B>图集上传</B>
+
+<A HREF=mainasp.htm>回主页</A></B><BR><BR>
+	<FONT COLOR=RED><B>上传您的图集</B></FONT><BR>
+	<FONT COLOR=RED></FONT>
+	<FORM METHOD=POST ACTION=/cgi-bin/lib/main.cgi>
+	<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=5>
+	<input type="file" id="input" name="ainput" onchange="setRpgTkoolMvSaveDataInputFileCheck();" style="vertical-align:middle; cursor:pointer;">
+	<TR><TD align=right>请选择类别</TD><TD><SELECT NAME='type'><OPTION VALUE=''>未选择类别</OPTION>
+<OPTION VALUE=''>常见路栖动物</OPTION>
+<OPTION VALUE=''>稀有路栖动物</OPTION>
+<OPTION VALUE=''>常见水栖动物</OPTION>
+<OPTION VALUE=''>稀有水栖动物</OPTION>
+<OPTION VALUE=''>城市夜景</OPTION>
+<OPTION VALUE=''>城市日景</OPTION>
+<OPTION VALUE=''>自然夜景</OPTION>
+<OPTION VALUE=''>自然日景</OPTION>
+<OPTION VALUE=''>美食</OPTION>
+<OPTION VALUE=''>生活家具</OPTION>
+
+
+</SELECT>
+</TD></TR>
+	<TR><TD>命名您的图集</TD><TD><INPUT TYPE=TEXT NAME='key'></TD></TR>
+	<TR><TD></TD><TD><INPUT TYPE=submit NAME=submit VALUE="开始上传"></TD></TR>
+	</TABLE>
+	<INPUT TYPE=hidden name="select" value="type">
+	<INPUT TYPE=hidden name="job" value="search">
+	<INPUT TYPE=hidden name="encode" value="GB">
+	</FORM>
+
+
+</UL>
+<BR><BR></TD></TR>
+</TABLE>
+</BODY>
+</HTML>
